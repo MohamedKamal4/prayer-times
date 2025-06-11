@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Ancizar+Serif:ital,wght@0,300..900;1,300..900&display=swap"
+    rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+
+<body class="d-flex flex-column align-items-center justify-content-center p-0 vh-100" id="backround">
+  <!-- <form class="my-5 mx-5 p-5">
+    <div class="mb-3 row">
+      <label for="inputname" class="col-sm-2 col-form-label">product name :</label>
+      <div class="col-sm-10">
+        <input type="text" class="form-control" id="inputname" />
+      </div>
+    </div>
+    <div class="mb-3 row">
+      <label for="inputprice" class="col-sm-2 col-form-label">product price :</label>
+      <div class="col-sm-10">
+        <input type="number" class="form-control" id="inputprice" min="1" />
+      </div>
+    </div>
+    <div class="mb-3 row">
+      <label for="inputcategory" class="col-sm-2 col-form-label">category name :</label>
+      <div class="col-sm-10">
+        <input type="text" class="form-control" id="inputcategory" />
+      </div>
+    </div>
+    <div class="mb-3 row">
+      <label for="inputquantity" class="col-sm-2 col-form-label">quantity :</label>
+      <div class="col-sm-10">
+        <input type="number" class="form-control" id="inputquantity" min="1" />
+      </div>
+    </div>
+    <div class="d-flex">
+      <button type="button" class="btn btn-outline-primary mx-2" onclick="add()">
+        add
+      </button>
+      <button type="button" id="updateButton" class="btn btn-outline-warning mx-2" onclick="updateProduct()">
+        update
+      </button>
+      <button type="button" class="btn btn-outline-danger mx-2" onclick="clear()">
+        clear
+      </button>
+
+    </div>
+  </form>
+  <table class="table w-75 m-auto">
+    <thead>
+      <tr>
+        <th scope="col">product name</th>
+        <th scope="col">product price</th>
+        <th scope="col">category</th>
+        <th scope="col">quantity</th>
+      </tr>
+    </thead>
+    <tbody id="tbody">
+    </tbody>
+  </table> -->
+
+  <!-- <h1 id="title">hello world</h1> -->
+
+
+  <!-- <form class="d-flex flex-column align-items-center my-5 mx-5 p-5 gap-2">
+    <input type="text" placeholder="your name" id="name" class="form-control w-25" />
+    <input type="text" placeholder="your age" id="age" class="form-control w-25" />
+    <div class="replace-later d-flex w-25 gap-2">
+      <input type="text" placeholder="first later" id="firstlater" class="form-control w-50" />
+      <input type="text" placeholder="second later" id="secondlater" class="form-control w-50" />
+    </div>
+    <div class="master-btn p-4">
+      <button id="btn-age" onclick="out" type="button">output</button>
+      <button id="btn-rep" type="button">Replace</button>
+      <button id="btn-rev" type="button">Reverse</button>
+    </div>
+  </form>
+
+  <p id="show" class="w-25 m-auto text-center bg-dark text-white"></p> -->
+
+  <!-- <div class="row flex-column align-items-center my-5 p-5 gap-2 w-50 m-auto">
+    <div class="col">
+      <input type="text" class="form-control" placeholder="Weight" id="weight">
+    </div>
+    <div class="col">
+      <input type="text" class="form-control" placeholder="Height" id="height">
+    </div>
+    <div class="col">
+      <button type="button" class="btn btn-primary w-100" id="btn-calc">Sub</button>
+    </div>
+    <div class="col">
+      <p id="show" class="w-100 m-auto text-center bg-dark text-white"></p>
+    </div>
+
+    <div class="row flex-column align-items-center my-5 p-5 gap-2 w-100 m-auto ">
+      <div class="col w-100">
+        <input type="text" class="form-control" placeholder="Name" id="name" />
+      </div>
+      <div class="col w-100 gap-2 d-flex">
+        <button type="button" class="btn btn-primary w-50" id="submit">Submit</button>
+        <button type="button" class="btn btn-primary w-50" id="delete">Delete</button>
+      </div>
+      <div class="col w-100">
+        <p id="showtwo" class="w-100 m-auto text-center bg-dark text-white"></p>
+      </div>
+    </div>
+  </div>
+
+  <form class="d-flex flex-column align-items-center p-5 gap-2 w-50 m-auto">
+    <input type="text" id="inputloop" placeholder="Enter a text" class="form-control w-100" />
+    <button id="btn-loop" type="button" class="btn btn-primary w-100 ">Sub</button>
+  </form>
+
+  <p id="showloop" class="w-100 m-auto text-center bg-dark text-white"></p> -->
+
+  <!-- <form class="d-flex flex-column align-items-center p-5 gap-2 w-50 m-auto">
+    <input type="text" id="input-search" placeholder="search using name" class="form-control w-100 " />
+    <button type="button" id="btn-search" class="btn btn-primary w-100">Search</button>
+    <p id="showsearch" class="w-100 m-auto text-center bg-dark text-white"></p>
+  </form> -->
+
+  <!-- <div id="show" class="w-100 h-100 m-auto text-center text-dark"></div> -->
+  <!-- <button type="button" class="btn fs-4 fw-bold " style="height: 80px; width: 250px;" id="btn-start">Start</button> -->
+
+  <!-- <div class="master">
+    <form id="form">
+      <select id="select">
+        <option id="optionOne" selected class="text-center">Style</option>
+        <option value="Ancizar Serif" class="text-center">Ancizar</option>
+        <option value="Oswald" class="text-center">Oswald</option>
+        <option value="Bodoni Moda" class="text-center">Bodoni Moda</option>
+      </select>
+      <div class="master-btn">
+        <button type="button" id="bold" class="bold fw-bold">B</button>
+        <div class="num">
+          <button type="button" id="minus" class="minus">-</button>
+          <p class="show " id="show">10</p>
+          <button type="button" id="plus" class="plus">+</button>
+        </div>
+        <button type="button" class="Invert" id="invert">Invert Colors</button>
+      </div>
+    </form>
+    <div class="master-show">
+      <p id="masterShow">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil temporibus
+        natus vel, tenetur maxime, ut sequi ex pariatur iste perferendis dicta omnis eaque ducimus. Rerum ducimus quas,
+        minus vel culpa voluptas harum, ipsum vitae hic ad qui deleniti cumque unde voluptatem accusantium animi</p>
+    </div>
+  </div> -->
+
+  <!-- 
+  <form id="form" class="d-flex flex-column align-items-center p-5 gap-2 w-100 h-50 bg-dark text-white">
+    <input type="text" placeholder="Enter The Name..." class="w-50 h-25 p-3 rounded border-0 outline-0" id="input-name"">
+    <button type=" button" class="btn btn-primary w-50" id="btn-submit">Send</button>
+    <p class="w-100 m-auto text-center bg-dark text-white" id="show"></p>
+  </form>
+
+  <div class="w-100 h-50 bg-danger d-flex justify-content-center align-items-center">
+    <p id="show-2" class="w-25 py-3 rounded m-auto text-center fs-4 text-white">
+      <span id="hid">Enter The Name</span>
+    </p>
+  </div> -->
+  <!-- <div class="crud w-100 h-100 d-flex flex-column align-items-center justify-content-center text-white">
+    <form id="form" class="w-50 h-50 m-auto d-flex flex-column align-items-center justify-content-center gap-4">
+      <input type="text" placeholder="Enter The Name..." id="name-input"
+        class="w-75 p-3 rounded border border-light-subtle outline-0">
+      <input type="email" placeholder="example@ex.com" id="email-input"
+        class="w-75 p-3 rounded border border-light-subtle outline-0">
+      <button type="submit" id="btn-submit"
+        class="w-75 p-2 rounded border-0 outline-0 btn btn-primary">Save</button>
+    </form>
+    <table class="table w-75 m-auto h-50 text-center">
+      <thead id="thead">
+        <tr>
+          <th>Name</th>
+          <th>Email</th>
+          <th>Control</th>
+        </tr>
+      </thead>
+      <tbody id="tbody">
+      </tbody>
+    </table>
+  </div> -->
+
+  <!-- <div class="w-50 text-bg-light m-auto" style="height: fit-content;">
+    <div class="head w-100 text-bg-primary d-flex justify-content-between align-items-center p-2" style="height: 50px;">
+      <p class="h-100 w-75 d-flex justify-content-center align-items-center m-0 fs-5" style="letter-spacing: 5px;">
+        Tasks Control</p>
+      <button type="button" id="add" class="bg-transparent border-0 outline-0 "><i id="plus"
+          class="fa-solid fa-plus text-white p-2"></i></button>
+    </div>
+    <div id="add-input" class="bg-primary-subtle w-100 p-3 justify-content-between align-items-center"
+      style="height: 100px;border: 1px solid rgba(0, 0, 0, 0.11);">
+      <form id="form" class="w-100 h-100 p-3 d-flex justify-content-between align-items-center gap-2">
+        <input type="text" id="name-task" placeholder="Enter Your Task..."
+          class="w-75 h-100 rounded border-0 outline-0 p-3">
+        <button type="submit" id="save-btn" class="btn btn-primary w-25 h-100">Save</button>
+      </form>
+    </div>
+    <div id="content" class="content p-4 d-flex flex-column gap-4" style="height: fit-content;">
+
+
+    </div>
+  </div>
+  </div> -->
+
+  <!-- 
+
+  <div class="general w-100 h-100 p-5 d-flex justify-content-center align-items-center gap-4" id="general">
+    <div class="side-left  bg-info-subtle" id="add-form">
+      <div class="icon h-25 w-100 d-flex justify-content-center align-items-center">
+        <div
+          class="i w-25 h-50 bg-success-subtle border-light border-light border d-flex justify-content-center align-items-center p-5 rounded-circle">
+          <i class="fa-solid fa-user-tie fs-1"></i>
+        </div>
+      </div>
+      <div class="form w-100 p-3">
+        <form class="w-100" id="side-left-form">
+          <input type="text" class="w-100 mb-3 border-0 outline-0 p-2" placeholder="Product Name"
+            id="input-name-product">
+          <input type="text" class="w-100 mb-3 border-0 outline-0 p-2" placeholder="Gategory" id="input-name-gategory">
+          <input type="number" class="w-100 mb-3 border-0 outline-0 p-2" placeholder="Price" id="input-price">
+          <input type="number" class="w-100 mb-3 border-0 outline-0 p-2" placeholder="Count" id="input-count">
+          <div class="total d-flex justify-content-center align-items-center w-100 ">
+            <span class="w-100 d-flex justify-content-between align-items-center ">Total : <span id="total"
+                class="w-50 d-flex justify-content-end align-items-center"></span></span>
+          </div>
+          <button type="submit" class="btn btn-primary w-100 mt-5" id="btn-add">Add</button>
+        </form>
+      </div>
+    </div>
+    <div class="side-right w-75 h-100 flex-column d-flex justify-content-start align-items-center" id="side-right">
+      <form class="control mb-5 w-100 gap-3 p-2 d-flex align-items-center justify-content-between" style="height: 50px;"
+        id="control">
+        <div class="search d-flex justify-content-center align-items-center gap-2">
+          <input type="text" class="h-100 p-2 rounded border-0 outline-0 text-bg-light"
+            placeholder="Search By Product Name" id="input-search">
+          <button class="btn btn-warning h-100 d-flex justify-content-center align-items-center" id="btn-search"><i
+              class=" text-white" id="search-icon"></i></button>
+        </div>
+        <div class="total h-100 d-flex justify-content-center align-items-center w-25 gap-2 px-4">
+          <p class="m-0 w-75 fw-bold d-flex justify-content-center align-items-center" style="font-size: 15px;">Total
+            Product : </p>
+          <span class="text-bg-secondary rounded d-flex justify-content-center align-items-center"
+            style="width: 30px; height: 30px;" id="quantity"></span>
+        </div>
+        <div class="clear w-25 h-100">
+          <button class="w-100 h-100 btn btn-danger" id="clear-btn">Clear</button>
+        </div>
+      </form>
+      <div class="table w-100 h-75" style="overflow-y: auto;">
+        <table class="table table-striped-columns">
+          <thead>
+            <tr>
+              <th class="text-center" scope="col">Order</th>
+              <th class="text-center" scope="col">Products</th>
+              <th class="text-center" scope="col">Category</th>
+              <th class="text-center" scope="col">Price</th>
+              <th class="text-center" scope="col">Count</th>
+              <th class="text-center" scope="col">Total Price</th>
+              <th class="text-center" scope="col">Edit</th>
+              <th class="text-center" scope="col">Delete</th>
+            </tr>
+          </thead>
+          <tbody id="tbody">
+
+          </tbody>
+        </table>
+      </div>
+      <div class="open-add w-100 d-flex justify-content-start align-items-center ps-5">
+        <button class="btn btn-primary fw-bold" id="show-add-form"><i class="" id="icon"
+            style="font-size: 12px;"></i></button>
+        <button class="btn btn-primary text-white" style="letter-spacing: 5px; font-size: 15px;" id="btn-all"> <i
+            class="fa-solid fa-arrow-right" id="icon-two"></i> All
+          Products</button>
+      </div>
+    </div>
+
+  </div>
+ -->
+  <!-- 
+  <div class="d-flex w-100 h-100">
+    <div class="users w-25 h-100 bg-success p-4 ">
+      <ul id="users" class="p-0 h-100 d-flex flex-column justify-content-between ">
+
+      </ul>
+    </div>
+    <div class="posts w-75 h-100 secondary-subtle p-4 d-flex flex-column justify-content-center align-items-center"
+      style="overflow-y: scroll;">
+      <ul id="posts" class="p-0  d-flex flex-column gap-3">
+
+      </ul>
+    </div>
+  </div> -->
+
+  <div class="conetnt h-75 w-75 ">
+    <div class="w-100 h-50 d-flex justify-content-between p-5">
+      <header class="w-75 h-100 ">
+        <h1>Prayer Times <br /><span id="city" class="fw-bold"></span></h1>
+        <p id="date"></p>
+      </header>
+      <select name="City" id="select" class="mt-3 city w-25 h-25 text-white border-0 outline-0 text-center">
+      </select>
+    </div>
+    <div class="body h-75 w-100 d-flex flex-column justify-content-center align-items-center" id="body">
+      <div class="times-container w-100" id="boxs">
+
+      </div>
+    </div>
+  </div>
+
+  <script src=" bootstrap.bundle.min.js">
+  </script>
+  <script src="main.js"></script>
+</body>
+
+</html>

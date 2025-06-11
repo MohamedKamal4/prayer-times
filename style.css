@@ -1,0 +1,214 @@
+/* .master {
+    background-color: #f1f1f1;
+    height: fit-content;
+    width: 50%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.master form {
+    background-color: transparent;
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.master form select {
+    width: 24%;
+    height: 100%;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    border: unset;
+    outline: unset;
+    padding: 10px;
+    font-size: 15px;
+}
+
+.master form .master-btn {
+    width: 75%;
+    height: 100% !important;
+    display: flex;
+    justify-content: space-between;
+}
+
+.master form .master-btn .bold,
+.master form .master-btn .num,
+.master form .master-btn .Invert {
+    width: 32%;
+    height: 100%;
+    border: unset;
+    outline: unset;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2%;
+    background-color: white;
+}
+
+.master form .master-btn .num {
+    background-color: transparent;
+}
+
+.master form .master-btn .num .minus,
+.master form .master-btn .num .plus,
+.master form .master-btn .num .show {
+    width: 32%;
+    height: 100%;
+    border: unset;
+    outline: unset;
+    background-color: white;
+    border-radius: unset;
+    margin: unset;
+}
+
+.master form .master-btn .num .show {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.master .master-show {
+    width: 100%;
+    height: calc(100% - 50px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 30px;
+    margin: unset;
+}
+
+.master form .master-btn .bold:hover,
+.master form .master-btn .Invert:hover,
+.master form .master-btn .num .minus:hover,
+.master form .master-btn .num .plus:hover {
+    background-color: #afafaf;
+} */
+/*
+li {
+    list-style: none !important;
+}
+
+
+.users ul li:hover {
+    cursor: pointer;
+}
+
+.selected {
+    margin-left: 50px !important;
+    transition: 0.5s;
+}
+
+*/
+.reload {
+    animation: reload infinite 1s;
+}
+
+@keyframes reload {
+
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+
+}
+
+body {
+    background: url(pexels-trksami-14988642.jpg);
+    background-size: cover;
+    background-position: bottom;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.conetnt {
+    background: linear-gradient(to right, #e0f7fa7a, #ffffff80);
+    backdrop-filter: blur(2px);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 15px;
+    box-shadow: 0 0 30px white;
+}
+
+header {
+    margin-bottom: 30px;
+}
+
+header h1 {
+    font-size: 3rem;
+    font-weight: 600;
+    color: #00796b;
+    margin-bottom: 20px;
+    font-weight: 100;
+}
+
+
+
+.city {
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+}
+
+header p {
+    font-size: 1rem;
+    color: #555;
+}
+
+.times-container {
+    display: flex;
+    max-width: 900px;
+    justify-content: space-between;
+
+    margin: 0 auto;
+    width: 100% !important;
+}
+
+.prayer-card {
+    background: #ffffff;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+    width: 15% !important;
+}
+
+.prayer-card:hover {
+    transform: translateY(-5px);
+}
+
+.prayer-name {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #004d40;
+    margin-bottom: 10px;
+}
+
+.prayer-time {
+    font-size: 1.5rem;
+    color: #00796b;
+}
+
+@media (max-width: 500px) {
+    header h1 {
+        font-size: 1.8rem;
+    }
+}
